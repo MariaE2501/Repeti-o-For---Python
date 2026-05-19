@@ -1,0 +1,10 @@
+print ("=== VERIFICAÇÃO DE MEDIA ===")
+soma = 0 #variavel
+
+for i in range(1, 6): # imprimir números de 1 a 5
+    nota = float(input(f"Digite a {i}ª nota: "))
+    soma += nota # variavel, soma + nota, todas as notas
+
+media = soma / 5
+
+print(f"\nA média das notas é: {media}")
