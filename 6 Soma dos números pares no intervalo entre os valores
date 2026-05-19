@@ -1,0 +1,16 @@
+print("=== SOMA DO INTERVALO ENTRE OS VALORES ===")
+inicio = int(input("Digite o número inicial: "))
+fim = int(input("Digite o número final: "))
+
+soma = 0
+
+for i in range(inicio, fim + 1): # inicio -> onde começa / fim + 1 -> vai até o número final / O +1 é necessário porque o range NÃO inclui o último número
+    if i % 2 == 0: # descobre se os numeros são pares
+        soma += i # soma+ i
+
+if soma > 0:
+    print(f"\nA soma dos números pares no intervalo é: {soma}")
+
+else:
+    print("Não existem números pares para somarmos no intervalo :/")
+
